@@ -1,8 +1,10 @@
 header {
     color: black;
     border: 1px solid black;
-    width: 80%;
+    
 }
+
+
 
 body {
     background-color: bisque;
@@ -11,13 +13,41 @@ body {
     flex-direction: column;
 }
 
+.flex {
+    display: flex
+}
+
+.column {
+    flex-direction: column;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
 .center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+
+.width-80 {
+    width: 80%;
+}
+
+#content {
+    border: 1px solid black;
+    border-top: 0;
+}
+
+p {
+    width: 80%;
+    margin: 10px;
+}
+
+
+
 
 nav {
     display: grid;
@@ -38,6 +68,3 @@ nav button {
     }
 
 
-#content {
-    width: 80%;
-}

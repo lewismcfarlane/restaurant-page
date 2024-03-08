@@ -11,7 +11,7 @@ export function addHeaderAndNav() {
     const headerHeading = document.createElement('h1');
     header.appendChild(headerHeading);
     
-    header.classList.add('center')
+    header.classList.add('flex', 'column', 'center', 'width-80', 'margin-0-auto');
     
 
     headerHeading.textContent = `Lewis & Son's`
@@ -37,9 +37,11 @@ export function addHeaderAndNav() {
 }
 
 export function addContentContainer() {
-    const contentContainer = document.createElement('div');
-    contentContainer.id = 'content';
+    const content = document.createElement('div');
+    content.id = 'content';
+    content.classList.add('center', 'width-80', 'margin-0-auto');
+    
   
-    return contentContainer;
+    return content;
   
   }
