@@ -1,3 +1,43 @@
-.hello {
-    color: red;
+header {
+    color: black;
+    border: 1px solid black;
+    width: 80%;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    justify-items: center;
+}
+  
+nav button {
+    padding: 5px;
+    text-align: center;
+    width: 50px;
+    background-color: bisque;
+    border: black 1px solid;
+    border-bottom: none;
+    
+    }
+
+
+#content {
+    width: 80%;
 }

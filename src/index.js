@@ -1,20 +1,9 @@
 import './style.css';
-import consoleLog from './module1';
+import { addHeaderAndNav, addContentContainer } from './module2.js';
 
 
-function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
-    
-    element.innerHTML = 'test'
-    element.classList.add('hello');
 
-    btn.innerHTML ='Click me';
-    btn.onclick = consoleLog;
 
-    element.appendChild(btn);
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+
+document.body.appendChild(addHeaderAndNav());
+document.body.appendChild(addContentContainer());
